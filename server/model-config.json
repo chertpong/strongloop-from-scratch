@@ -35,5 +35,17 @@
   "PlaceType": {
     "dataSource": "db",
     "public": true
+  },
+  "Contact": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Content": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Place": {
+    "dataSource": "db",
+    "public": true
   }
 }

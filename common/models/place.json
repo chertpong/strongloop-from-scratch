@@ -1,0 +1,37 @@
+{
+  "name": "Place",
+  "plural": "Places",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "placeType": {
+      "type": "hasOne",
+      "model": "PlaceType",
+      "foreignKey": ""
+    },
+    "contents": {
+      "type": "hasMany",
+      "model": "Content",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
