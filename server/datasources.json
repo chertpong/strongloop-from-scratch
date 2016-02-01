@@ -1,6 +1,7 @@
 {
   "db": {
+    "database": "from-scratch",
     "name": "db",
-    "connector": "memory"
+    "connector": "mongodb"
   }
 }

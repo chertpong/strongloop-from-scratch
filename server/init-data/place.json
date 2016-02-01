@@ -1,0 +1,18 @@
+[
+  {
+    "name":"Wat Chedi Luang",
+    "location":{
+      "lat":18.786951,
+      "lng":98.984322
+    },
+    "thumbnail":"http://thailandforvisitors.com/north/chiangmai/chediluang/IMG_8862.jpg"
+  },
+  {
+    "name":"Lert Ros",
+    "location":{
+      "lat":18.805065,
+      "lng":99.003181
+    },
+    "thumbnail":"https://ohsirin.files.wordpress.com/2014/03/1-lert-ros-cnx-logo-name.jpg"
+  }
+]
