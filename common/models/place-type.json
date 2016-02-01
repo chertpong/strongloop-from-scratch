@@ -17,7 +17,14 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "places": {
+      "type": "hasMany",
+      "model": "Place",
+      "foreignKey": "typeId",
+      "through": "Place"
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -23,10 +23,10 @@
       "type": "string"
     },
     "openTime": {
-      "type": "date"
+      "type": "number"
     },
     "closeTime": {
-      "type": "date"
+      "type": "number"
     },
     "workingDay": {
       "type": "string"
@@ -37,7 +37,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "place": {
+      "type": "belongsTo",
+      "model": "Place",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

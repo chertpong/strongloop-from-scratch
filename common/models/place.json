@@ -12,7 +12,7 @@
       "required": true
     },
     "location": {
-      "type": "geopoint",
+      "type": "GeoPoint",
       "required": true
     },
     "thumbnail": {
@@ -21,14 +21,19 @@
   },
   "validations": [],
   "relations": {
-    "placeType": {
-      "type": "hasOne",
-      "model": "PlaceType",
-      "foreignKey": ""
-    },
     "contents": {
       "type": "hasMany",
       "model": "Content",
+      "polymorphic":"contentable"
+    },
+    "contacts": {
+      "type": "hasOne",
+      "model": "Contact",
+      "foreignKey": ""
+    },
+    "typeId": {
+      "type": "belongsTo",
+      "model": "PlaceType",
       "foreignKey": ""
     }
   },
